@@ -20,6 +20,7 @@ public class BeatController : SingletonMB<BeatController>
     // Static song information
     public int tempo;
     private float secPerBeat;
+    private float offsetToFirstBeat = 0.119f;
 
     //Pause information
     public static bool paused = false;
@@ -38,6 +39,7 @@ public class BeatController : SingletonMB<BeatController>
     void Start()
     {
         secPerBeat = 60f / tempo;
+        songPosition = -songPosition;
         StartMusic();
     }
 
