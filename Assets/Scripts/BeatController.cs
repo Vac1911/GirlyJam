@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -24,11 +25,14 @@ public class BeatController : SingletonMB<BeatController>
     public static bool paused = false;
     public static float pauseTimeStamp = -1f;
     public static float pausedTime = 0;
+    public GameObject PauseCanvas;
 
     //Dynamic song information
     public float songPosition;
     public float songPosInBeats;
     public float dspSongTime;
+
+    public bool musicStarted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +43,8 @@ public class BeatController : SingletonMB<BeatController>
     // Update is called once per frame
     void Update()
     {
+        //Only do things if the music has started
+        if (!musicStarted) return;
 
         if (paused)
         {
@@ -46,7 +52,9 @@ public class BeatController : SingletonMB<BeatController>
             {
                 pauseTimeStamp = (float)AudioSettings.dspTime;
                 AudioListener.pause = true;
+
                 //Activate some UI here
+                PauseCanvas.SetActive(true);
             }
 
             return;
@@ -62,6 +70,23 @@ public class BeatController : SingletonMB<BeatController>
 
         //calculate the position in beats
         songPosInBeats = songPosition / secPerBeat;
+    }
 
+    public void Resume()
+    {
+        PauseCanvas.SetActive(false);
+        paused = false;
+    }
+
+    void StartMusic()
+    {
+        //Debug.Log("Starting Music");
+        //Record the time when the audio starts
+        dspSongTime = (float)AudioSettings.dspTime;
+
+        //start the song
+        musicSource.Play();
+
+        musicStarted = true;
     }
 }
