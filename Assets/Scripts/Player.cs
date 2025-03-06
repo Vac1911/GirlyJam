@@ -18,6 +18,16 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+
+        if(Input.GetButtonDown("Fire1"))
+            Attack();
+
+    }
+
+    void Attack()
+    {
+        float beat = BeatController.Instance.songPosInBeats;
+        Debug.Log(beat);
     }
 
     void Move()

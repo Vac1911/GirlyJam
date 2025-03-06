@@ -38,6 +38,7 @@ public class BeatController : SingletonMB<BeatController>
     void Start()
     {
         secPerBeat = 60f / tempo;
+        StartMusic();
     }
 
     // Update is called once per frame
