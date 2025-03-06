@@ -5,17 +5,17 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 
-[RequireComponent(typeof(AudioSource))]
-[RequireComponent(typeof(AudioListener))]
 public class BeatController : SingletonMB<BeatController>
 {
 
     public event Action<BeatController> OnBeat = beatController => { };
 
-    public AudioSource musicSource;
-    public AudioListener audioListener;
+    public EventInstance musicSource;
+    public StudioListener audioListener;
 
     // Static song information
     public int tempo;
@@ -85,7 +85,7 @@ public class BeatController : SingletonMB<BeatController>
         dspSongTime = (float)AudioSettings.dspTime;
 
         //start the song
-        musicSource.Play();
+        musicSource.start();
 
         musicStarted = true;
     }
