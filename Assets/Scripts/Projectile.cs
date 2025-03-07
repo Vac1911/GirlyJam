@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public int startBeat;
     public int duration;
+    public int damage;
     private GameObject player;
     protected float initialDistance;
 
@@ -16,8 +17,9 @@ public class Projectile : MonoBehaviour
 
     public static GameObject template;
 
-    public void Init(GameObject player, int duration)
+    public void Init(GameObject player, int duration, int damage)
     {
+        this.damage = damage;
         this.startBeat = (int)Mathf.Floor(BeatController.Instance.songPosInBeats);
         this.player = player;
         this.duration = duration;
@@ -38,7 +40,7 @@ public class Projectile : MonoBehaviour
 
         if (currentPercent > 1)
         {
-            // Hit the player
+            player.GetComponent<Player>().ReceiveDamage(damage, endBeat);
             Destroy(gameObject);
 
         }

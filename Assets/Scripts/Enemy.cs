@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Character
 {
     public GameObject projectilePrefab;
     public GameObject player;
@@ -33,6 +33,11 @@ public class Enemy : MonoBehaviour
 
         GameObject projectileObject = Instantiate(projectilePrefab, position, Quaternion.identity);
 
-        projectileObject.GetComponent<Projectile>().Init(player, 2);
+        projectileObject.GetComponent<Projectile>().Init(player, 2, 10);
+    }
+
+    public override void ReceiveDamage(int amount, float beat)
+    {
+        throw new System.NotImplementedException();
     }
 }

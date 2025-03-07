@@ -12,15 +12,14 @@ public class BeatController : SingletonMB<BeatController>
 {
     // Static song information
     private int tempo = 0;
-    private float secPerBeat;
+    private int firstBeatTime;
+    private int msPerBeat;
 
-    //Pause information
-    public GameObject PauseCanvas;
+    /*//Pause information
+    public GameObject PauseCanvas;*/
 
     //Dynamic song information
-    public float songPosition;
     public float songPosInBeats;
-    public float dspSongTime;
 
     public bool musicStarted = false;
 
@@ -30,30 +29,26 @@ public class BeatController : SingletonMB<BeatController>
     void Start()
     {
         ScriptUsageTimeline scriptTimeline = GetComponent<ScriptUsageTimeline>();
-        songPosition = -songPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (tempo > 0)
+        if (musicStarted)
         {
             int position = scriptTimeline.GetTimelinePosition();
-            Debug.Log(position);
-
-            /*currentTime = musicInstance.getTimelinePosition
-            //calculate the position of the song in seconds from dsp space
-            songPosition = (float)(AudioSettings.dspTime - dspSongTime);
-
-            //calculate the position in beats
-            songPosInBeats = songPosition / secPerBeat;*/
+            songPosInBeats = ((float)position - firstBeatTime) / msPerBeat;
         }
-
     }
 
-    /*public void ReadFirstBeat(FMOD.Studio.TIMELINE_BEAT_PROPERTIES beat)
+    public void ReadFirstBeat(FMOD.Studio.TIMELINE_BEAT_PROPERTIES beat)
     {
-        tempo = (int)beat.tempo;
-        secPerBeat = 60f / tempo
-    }*/
+        if (!musicStarted)
+        {
+            musicStarted = true;
+            tempo = (int)beat.tempo;
+            msPerBeat = 60000 / tempo;
+            firstBeatTime = beat.position;
+        }
+    }
 }

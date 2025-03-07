@@ -110,8 +110,11 @@ public class ScriptUsageTimeline : MonoBehaviour
                 case FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT:
                 {
                     var parameter = (FMOD.Studio.TIMELINE_BEAT_PROPERTIES)Marshal.PtrToStructure(parameterPtr, typeof(FMOD.Studio.TIMELINE_BEAT_PROPERTIES));
-                        timelineInfo.CurrentMusicBar = parameter.bar;
-                    Debug.Log(parameter);
+                    timelineInfo.CurrentMusicBar = parameter.bar;
+                    if(BeatController.Instance)
+                    {
+                            BeatController.Instance.ReadFirstBeat(parameter);
+                    }
                     break;
                 }
                 case FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER:
