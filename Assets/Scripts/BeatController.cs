@@ -7,25 +7,14 @@ using UnityEditor;
 using UnityEngine;
 
 
-[RequireComponent(typeof(AudioSource))]
-[RequireComponent(typeof(AudioListener))]
+[RequireComponent(typeof(ScriptUsageTimeline))]
 public class BeatController : SingletonMB<BeatController>
 {
-
-    public event Action<BeatController> OnBeat = beatController => { };
-
-    public AudioSource musicSource;
-    public AudioListener audioListener;
-
     // Static song information
-    public int tempo;
+    private int tempo = 0;
     private float secPerBeat;
-    private float offsetToFirstBeat = 0.119f;
 
     //Pause information
-    public static bool paused = false;
-    public static float pauseTimeStamp = -1f;
-    public static float pausedTime = 0;
     public GameObject PauseCanvas;
 
     //Dynamic song information
@@ -35,61 +24,36 @@ public class BeatController : SingletonMB<BeatController>
 
     public bool musicStarted = false;
 
+    public ScriptUsageTimeline scriptTimeline;
+
     // Start is called before the first frame update
     void Start()
     {
-        secPerBeat = 60f / tempo;
+        ScriptUsageTimeline scriptTimeline = GetComponent<ScriptUsageTimeline>();
         songPosition = -songPosition;
-        StartMusic();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Only do things if the music has started
-        if (!musicStarted) return;
-
-        if (paused)
+        if (tempo > 0)
         {
-            if (pauseTimeStamp < 0f) // write down the time we paused
-            {
-                pauseTimeStamp = (float)AudioSettings.dspTime;
-                AudioListener.pause = true;
+            int position = scriptTimeline.GetTimelinePosition();
+            Debug.Log(position);
 
-                //Activate some UI here
-                PauseCanvas.SetActive(true);
-            }
+            /*currentTime = musicInstance.getTimelinePosition
+            //calculate the position of the song in seconds from dsp space
+            songPosition = (float)(AudioSettings.dspTime - dspSongTime);
 
-            return;
-        }
-        else if (pauseTimeStamp > 0f) // resume if not paused
-        {
-            AudioListener.pause = false;
-            pauseTimeStamp = -1f;
+            //calculate the position in beats
+            songPosInBeats = songPosition / secPerBeat;*/
         }
 
-        //calculate the position of the song in seconds from dsp space
-        songPosition = (float)(AudioSettings.dspTime - dspSongTime - pausedTime);
-
-        //calculate the position in beats
-        songPosInBeats = songPosition / secPerBeat;
     }
 
-    public void Resume()
+    /*public void ReadFirstBeat(FMOD.Studio.TIMELINE_BEAT_PROPERTIES beat)
     {
-        PauseCanvas.SetActive(false);
-        paused = false;
-    }
-
-    void StartMusic()
-    {
-        //Debug.Log("Starting Music");
-        //Record the time when the audio starts
-        dspSongTime = (float)AudioSettings.dspTime;
-
-        //start the song
-        musicSource.Play();
-
-        musicStarted = true;
-    }
+        tempo = (int)beat.tempo;
+        secPerBeat = 60f / tempo
+    }*/
 }

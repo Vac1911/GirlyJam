@@ -137,6 +137,8 @@ GameObject:
   - component: {fileID: 65447546}
   - component: {fileID: 65447547}
   - component: {fileID: 65447548}
+  - component: {fileID: 65447550}
+  - component: {fileID: 65447549}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -279,6 +281,45 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &65447549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65447541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc86237d53aa3be40ac3e8b438075a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDontDestroyOnLoad: 0
+  isSilent: 1
+  PauseCanvas: {fileID: 0}
+  songPosition: 0
+  songPosInBeats: 0
+  dspSongTime: 0
+  musicStarted: 0
+  scriptTimeline: {fileID: 0}
+--- !u!114 &65447550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65447541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb80d31ed134024a94d8193cde812f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventName:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: event:/music/music
 --- !u!1 &248404704
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,10 +739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb80d31ed134024a94d8193cde812f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 0}
-  audioListener: {fileID: 0}
-  tempo: 0
-  PauseCanvas: {fileID: 0}
   EventName:
     Guid:
       Data1: 1748686732

@@ -26,7 +26,7 @@ using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-class ScriptUsageTimeline : MonoBehaviour
+public class ScriptUsageTimeline : MonoBehaviour
 {
     class TimelineInfo
     {
@@ -36,20 +36,6 @@ class ScriptUsageTimeline : MonoBehaviour
 
     TimelineInfo timelineInfo;
     GCHandle timelineHandle;
-
-    public AudioSource musicSource;
-    public AudioListener audioListener;
-
-    // Static song information
-    public int tempo;
-    private float secPerBeat;
-    private float offsetToFirstBeat = 0.119f;
-
-    //Pause information
-    public static bool paused = false;
-    public static float pauseTimeStamp = -1f;
-    public static float pausedTime = 0;
-    public GameObject PauseCanvas;
 
     public FMODUnity.EventReference EventName;
 
@@ -91,6 +77,13 @@ class ScriptUsageTimeline : MonoBehaviour
     void OnGUI()
     {
         GUILayout.Box(String.Format("Current Bar = {0}, Last Marker = {1}", timelineInfo.CurrentMusicBar, (string)timelineInfo.LastMarker));
+    }
+
+    public int GetTimelinePosition()
+    {
+        int position = 0;
+        musicInstance.getTimelinePosition(out position);
+        return position;
     }
 
     [AOT.MonoPInvokeCallback(typeof(FMOD.Studio.EVENT_CALLBACK))]
