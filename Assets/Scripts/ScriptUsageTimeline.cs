@@ -45,7 +45,7 @@ public class ScriptUsageTimeline : MonoBehaviour
 #if UNITY_EDITOR
     void Reset()
     {
-        EventName = FMODUnity.EventReference.Find("event:/music/music");
+        EventName = FMODUnity.EventReference.Find("event:/Music List/Song 1");
     }
 #endif
 
