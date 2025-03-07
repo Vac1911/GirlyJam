@@ -36,6 +36,21 @@ class ScriptUsageTimeline : MonoBehaviour
 
     TimelineInfo timelineInfo;
     GCHandle timelineHandle;
+    public event Action<BeatController> OnBeat = beatController => { };
+
+    public AudioSource musicSource;
+    public AudioListener audioListener;
+
+    // Static song information
+    public int tempo;
+    private float secPerBeat;
+    private float offsetToFirstBeat = 0.119f;
+
+    //Pause information
+    public static bool paused = false;
+    public static float pauseTimeStamp = -1f;
+    public static float pausedTime = 0;
+    public GameObject PauseCanvas;
 
     public FMODUnity.EventReference EventName;
 
