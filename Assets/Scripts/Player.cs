@@ -27,6 +27,33 @@ public class Player : MonoBehaviour
     void Attack()
     {
         float beat = BeatController.Instance.songPosInBeats;
+
+        Vector2 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
+
+        // Cast a ray from screen point
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit))
+        {
+            Debug.Log(hit.point);
+            Vector3 heading = hit.point - transform.position;
+            heading.y = 0;
+            heading.Normalize();
+            Debug.DrawLine(transform.position + heading * 0.75f, transform.position + heading * 2, Color.blue, 10f);
+        }
+        /*Plane m_Plane = new Plane(Vector3.up, 1);
+        float enter = 0.0f;
+        if (m_Plane.Raycast(ray, out enter))
+        {
+            Vector3 hitPoint = ray.GetPoint(enter);
+            Debug.Log(hitPoint);
+            Vector3 heading = hitPoint - transform.position;
+            heading.y = 0;
+            heading.Normalize();
+            Debug.DrawLine(transform.position + heading * 0.75f, transform.position + heading * 2, Color.blue, 10f);
+        }*/
+
+
         Debug.Log(beat);
     }
 
