@@ -8,11 +8,17 @@ using UnityEngine;
 public class Player : Character
 {
     public float moveSpeed = 5;
+
+    public int attackDamage;
     [Range(0.0f, 0.5f)]
     public float attackThreshold;
     [Range(0.0f, 0.5f)]
     public float dodgeThreshold;
     public float dodgeDistance;
+
+    public float attackTime;
+    bool isAttacking = false;
+
     protected float lastDodge;
     protected Vector3 attackSize = new Vector3(1.5f , 1 , 1.5f);
     private CharacterController controller;
@@ -49,15 +55,16 @@ public class Player : Character
 
     void Attack()
     {
+        if (isAttacking) return;
+
         float currentBeat = BeatController.Instance.songPosInBeats;
 
         float offBeat = currentBeat - Mathf.Round(currentBeat);
 
-        Debug.Log(offBeat);
         // Are we attacking at the right time?
         if (Mathf.Abs(offBeat) > attackThreshold)
         {
-            Debug.Log("attack failed");
+            Debug.Log("attack failed " + offBeat);
             return;
         }
 
@@ -81,9 +88,26 @@ public class Player : Character
         int i = 0;
         while (i < hitColliders.Length)
         {
-            Debug.Log("Hit : " + hitColliders[i].name + i);
+            Collider collider = hitColliders[i];
+            Character hitCharacter = collider.gameObject.GetComponent<Character>();
+            if(hitCharacter)
+            {
+                hitCharacter.ReceiveDamage(attackDamage, currentBeat);
+                Debug.Log("Hit : " + collider.name);
+            }
+
             i++;
         }
+
+        // Start Attack Animation;
+        isAttacking = true;
+        StartCoroutine("DoAttackAnim");
+    }
+
+    IEnumerator DoAttackAnim()
+    {
+        yield return new WaitForSeconds(attackTime);
+        isAttacking = false;
     }
 
     void Dodge()
@@ -92,18 +116,19 @@ public class Player : Character
         float offBeat = lastDodge - Mathf.Round(lastDodge);
         if (Mathf.Abs(offBeat) < dodgeThreshold)
         {
-            Debug.Log("Dodge Success");
+            Debug.Log("Dodge Success " + offBeat);
 
             controller.Move(GetMoveDirection() * dodgeDistance);
         }
         else
         {
-            Debug.Log("Dodge Fail");
+            Debug.Log("Dodge Fail " + offBeat);
         }
     }
     void Move()
     {
-        Vector3 motion = GetMoveDirection() * moveSpeed * Time.deltaTime;
+        float speed = isAttacking ? moveSpeed / 2 : moveSpeed;
+        Vector3 motion = GetMoveDirection() * speed * Time.deltaTime;
         controller.Move(motion);
     }
 
@@ -129,7 +154,6 @@ public class Player : Character
             if(currentBeat > damageEvent.beat + dodgeThreshold)
             {
                 float lastDodgeOffBeat = Mathf.Abs(lastDodge - damageEvent.beat);
-                Debug.Log(lastDodgeOffBeat);
                 if (lastDodgeOffBeat < dodgeThreshold)
                 {
                     Debug.Log("dodged");

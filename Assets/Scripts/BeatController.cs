@@ -6,7 +6,6 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-
 [RequireComponent(typeof(ScriptUsageTimeline))]
 public class BeatController : SingletonMB<BeatController>
 {
@@ -15,15 +14,14 @@ public class BeatController : SingletonMB<BeatController>
     private int firstBeatTime;
     private int msPerBeat;
 
-    /*//Pause information
-    public GameObject PauseCanvas;*/
-
     //Dynamic song information
     public float songPosInBeats;
 
     public bool musicStarted = false;
 
     public ScriptUsageTimeline scriptTimeline;
+
+    public event Action<FMOD.Studio.TIMELINE_BEAT_PROPERTIES> OnBeat;
 
     // Start is called before the first frame update
     void Start()
@@ -50,5 +48,6 @@ public class BeatController : SingletonMB<BeatController>
             msPerBeat = 60000 / tempo;
             firstBeatTime = beat.position;
         }
+        OnBeat(beat);
     }
 }

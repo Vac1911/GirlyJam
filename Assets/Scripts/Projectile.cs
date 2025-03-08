@@ -7,8 +7,8 @@ public class Projectile : MonoBehaviour
     public int startBeat;
     public int duration;
     public int damage;
-    private GameObject player;
-    protected float initialDistance;
+    private GameObject sender;
+    private GameObject target;
 
     public int endBeat
     {
@@ -17,32 +17,33 @@ public class Projectile : MonoBehaviour
 
     public static GameObject template;
 
-    public void Init(GameObject player, int duration, int damage)
+    public void Init(GameObject sender, GameObject target, int duration, int damage)
     {
         this.damage = damage;
         this.startBeat = (int)Mathf.Floor(BeatController.Instance.songPosInBeats);
-        this.player = player;
+        this.sender = sender;
+        this.target = target;
         this.duration = duration;
-        this.initialDistance = Vector3.Distance(transform.position , player.transform.position);
     }
 
     private void Update()
     {
         float currentBeat = BeatController.Instance.songPosInBeats;
         float currentPercent = (currentBeat - (float)startBeat) / (float)duration;
-        float distanceToTarget = (1f - currentPercent) * initialDistance;
 
-        Vector3 heading = transform.position - player.transform.position;
+        float totalDistance = Vector3.Distance(sender.transform.position, target.transform.position);
+        float currentDistance = currentPercent * totalDistance;
+
+        Vector3 heading = sender.transform.position - target.transform.position;
         heading = heading.normalized;
-        Vector3 position = player.transform.position + heading * distanceToTarget;
 
+        Vector3 position = sender.transform.position - heading * currentDistance;
         transform.position = position;
 
         if (currentPercent > 1)
         {
-            player.GetComponent<Player>().ReceiveDamage(damage, endBeat);
+            target.GetComponent<Character>().ReceiveDamage(damage, endBeat);
             Destroy(gameObject);
-
         }
     }
 }
