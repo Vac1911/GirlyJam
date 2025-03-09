@@ -128,6 +128,9 @@ MonoBehaviour:
   maxHealth: 50
   projectilePrefab: {fileID: 1887636797367155341, guid: b319dc96e0b3ef74abac904b591244a2, type: 3}
   player: {fileID: 0}
+  healthBarPrefab: {fileID: 8777588648653784296, guid: 992ff760bdb7f7449a048f76096c97ff, type: 3}
+  Canvas: {fileID: 0}
+  attackIntercal: 8
 --- !u!195 &2637961137943332349
 NavMeshAgent:
   m_ObjectHideFlags: 0

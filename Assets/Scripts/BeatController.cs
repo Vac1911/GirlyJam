@@ -14,14 +14,17 @@ public class BeatController : SingletonMB<BeatController>
     private int firstBeatTime;
     private int msPerBeat;
 
+    public int beatsPerLoop = 0;
+
     //Dynamic song information
     public float songPosInBeats;
+    public int loopCounter = 0;
 
     public bool musicStarted = false;
 
     public ScriptUsageTimeline scriptTimeline;
 
-    public event Action<FMOD.Studio.TIMELINE_BEAT_PROPERTIES> OnBeat;
+    public event Action<FMOD.Studio.TIMELINE_BEAT_PROPERTIES>? OnBeat;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +38,16 @@ public class BeatController : SingletonMB<BeatController>
         if (musicStarted)
         {
             int position = scriptTimeline.GetTimelinePosition();
-            songPosInBeats = ((float)position - firstBeatTime) / msPerBeat;
+            float nextSongPosInBeats = (((float)position - firstBeatTime) / msPerBeat) + loopCounter * beatsPerLoop;
+            if (nextSongPosInBeats < songPosInBeats)
+            {
+                if(beatsPerLoop == 0)
+                {
+                    beatsPerLoop = Mathf.CeilToInt(songPosInBeats);
+                }
+                loopCounter++;
+            }
+            songPosInBeats = nextSongPosInBeats;
         }
     }
 
@@ -48,6 +60,15 @@ public class BeatController : SingletonMB<BeatController>
             msPerBeat = 60000 / tempo;
             firstBeatTime = beat.position;
         }
-        OnBeat(beat);
+        if(OnBeat != null) OnBeat(beat);
+    }
+    /**
+     * FMOD getTimelinePosition is dependent on "Studio update rate" it only has an accuracy of 20ms.
+     * So anything within 20ms should be counted as perfect.
+     * @see https://qa.fmod.com/t/gettimelineposition-accuracy-for-rhythm-game/20202
+     */
+    public bool IsPerfect(float offBeat)
+    {
+        return Mathf.Abs(offBeat) < 0.020f;
     }
 }

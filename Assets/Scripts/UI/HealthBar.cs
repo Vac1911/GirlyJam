@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 public class HealthBar : MonoBehaviour
 {
@@ -24,5 +25,6 @@ public class HealthBar : MonoBehaviour
     {
         float percentage = (float)character.health / character.maxHealth;
         fill.rectTransform.localScale = new Vector3(percentage, 1, 1);
+        transform.position = Camera.main.WorldToScreenPoint(character.transform.position);
     }
 }

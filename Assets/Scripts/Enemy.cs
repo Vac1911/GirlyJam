@@ -17,7 +17,6 @@ public class Enemy : Character
     bool isAttacking = false;
     int attackTimer = 0;
 
-
     public GameObject healthBarPrefab;
     public GameObject Canvas;
     protected GameObject healthBar;
@@ -28,7 +27,8 @@ public class Enemy : Character
         navAgent = GetComponent<NavMeshAgent>();
         BeatController.Instance.OnBeat += HandleBeat;
         navAgent.speed = speed;
-        healthBar = Instantiate(healthBar, Canvas.transform); 
+        healthBar = Instantiate(healthBarPrefab, Canvas.transform);
+        healthBar.GetComponent<HealthBar>().character = this;
     }
 
     // Update is called once per frame
@@ -93,7 +93,9 @@ public class Enemy : Character
         if(health <= 0)
         {
             Destroy(healthBar);
-            /*Destroy(gameObject);*/
+            Destroy(gameObject);
+
+            BeatController.Instance.OnBeat -= HandleBeat;
         }
     }
 }

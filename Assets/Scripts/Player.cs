@@ -60,6 +60,7 @@ public class Player : Character
         float currentBeat = BeatController.Instance.songPosInBeats;
 
         float offBeat = currentBeat - Mathf.Round(currentBeat);
+        BeatFeedback.Instance.SendFeedback(this, offBeat, attackThreshold);
 
         // Are we attacking at the right time?
         if (Mathf.Abs(offBeat) > attackThreshold)
@@ -92,8 +93,8 @@ public class Player : Character
             Character hitCharacter = collider.gameObject.GetComponent<Character>();
             if(hitCharacter)
             {
-                hitCharacter.ReceiveDamage(attackDamage, currentBeat);
                 Debug.Log("Hit : " + collider.name);
+                hitCharacter.ReceiveDamage(attackDamage, currentBeat);
             }
 
             i++;
@@ -114,6 +115,7 @@ public class Player : Character
     {
         lastDodge = BeatController.Instance.songPosInBeats;
         float offBeat = lastDodge - Mathf.Round(lastDodge);
+        BeatFeedback.Instance.SendFeedback(this, offBeat, dodgeThreshold);
         if (Mathf.Abs(offBeat) < dodgeThreshold)
         {
             Debug.Log("Dodge Success " + offBeat);
