@@ -22,6 +22,7 @@ public class Player : Character
     protected float lastDodge;
     protected Vector3 attackSize = new Vector3(1.5f , 1 , 1.5f);
     private CharacterController controller;
+    private Animator anim;
 
     protected struct DamageEvent {
         public int amount;
@@ -38,6 +39,7 @@ public class Player : Character
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -102,6 +104,7 @@ public class Player : Character
 
         // Start Attack Animation;
         isAttacking = true;
+        anim.SetTrigger("IsAttacking");
         StartCoroutine("DoAttackAnim");
     }
 
@@ -132,6 +135,8 @@ public class Player : Character
         float speed = isAttacking ? moveSpeed / 2 : moveSpeed;
         Vector3 motion = GetMoveDirection() * speed * Time.deltaTime;
         controller.Move(motion);
+
+        anim.SetBool("IsMoving", true);
     }
 
     Vector3 GetMoveDirection()

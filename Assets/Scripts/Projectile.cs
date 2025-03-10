@@ -31,6 +31,11 @@ public class Projectile : MonoBehaviour
         float currentBeat = BeatController.Instance.songPosInBeats;
         float currentPercent = (currentBeat - (float)startBeat) / (float)duration;
 
+        if(sender == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
         float totalDistance = Vector3.Distance(sender.transform.position, target.transform.position);
         float currentDistance = currentPercent * totalDistance;
 
