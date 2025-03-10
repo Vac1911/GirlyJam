@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements.Experimental;
 
 [RequireComponent(typeof(CharacterController))]
 public class Player : Character
@@ -102,6 +103,8 @@ public class Player : Character
             i++;
         }
 
+        transform.rotation = Quaternion.LookRotation(heading);
+
         // Start Attack Animation;
         isAttacking = true;
         anim.SetTrigger("IsAttacking");
@@ -133,10 +136,16 @@ public class Player : Character
     void Move()
     {
         float speed = isAttacking ? moveSpeed / 2 : moveSpeed;
-        Vector3 motion = GetMoveDirection() * speed * Time.deltaTime;
+        Vector3 direction = GetMoveDirection();
+        Vector3 motion = direction * speed * Time.deltaTime;
         controller.Move(motion);
 
         anim.SetBool("IsMoving", true);
+        if(!isAttacking)
+        {
+
+            transform.rotation = direction != Vector3.zero ? Quaternion.LookRotation(GetMoveDirection()) : Quaternion.identity;
+        }
     }
 
     Vector3 GetMoveDirection()

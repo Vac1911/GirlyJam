@@ -1,0 +1,33 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="Cap_Turbo_PhysicsAsset" ExportPath="/Script/Engine.PhysicsAsset'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset'"
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:PhysicsConstraintTemplate_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:SkeletalBodySetup_0'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:SkeletalBodySetup_1'"
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:PhysicsConstraintTemplate_0'"
+      DefaultInstance=(JointName="Cap_turbo2",ConstraintBone1="Cap_turbo2",ConstraintBone2="Cap_turbo_Root",Pos2=(X=0.000000,Y=0.000000,Z=12.451747),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:SkeletalBodySetup_0'"
+      AggGeom=(SphylElems=((Center=(X=-0.001122,Y=6.187875,Z=-1.487097),Rotation=(Pitch=0.000000,Yaw=0.012999,Roll=-70.512863),Radius=18.190899,Length=22.896605)))
+      BoneName="Cap_turbo_Root"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/YippyKawaii2/Meshes/Accessories_Meshes/Cap_Turbo_PhysicsAsset.Cap_Turbo_PhysicsAsset:SkeletalBodySetup_1'"
+      AggGeom=(SphylElems=((Center=(X=-0.000005,Y=0.008564,Z=6.806728),Rotation=(Pitch=0.000000,Yaw=-89.999969,Roll=-89.999931),Radius=7.092698,Length=23.618805)))
+      BoneName="Cap_turbo2"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   PreviewSkeletalMesh="/Game/YippyKawaii2/Meshes/Accessories_Meshes/SM_Cap_Turbo.SM_Cap_Turbo"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   SkeletalBodySetups(0)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_0'"
+   SkeletalBodySetups(1)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_1'"
+   ConstraintSetup(0)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_0'"
+   SolverSettings=(CullDistance=1.000000,bUseLinearJointSolver=False,bUseManifolds=False)
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+End Object

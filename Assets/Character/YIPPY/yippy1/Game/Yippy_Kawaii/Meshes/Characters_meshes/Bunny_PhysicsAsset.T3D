@@ -1,0 +1,213 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="Bunny_PhysicsAsset" ExportPath="/Script/Engine.PhysicsAsset'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset'"
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_9" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_9'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_8" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_8'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_7" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_7'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_6" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_6'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_5" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_5'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_4" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_4'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_3'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_2'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_13" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_13'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_12" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_12'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_11" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_11'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_10" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_10'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_1'"
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_9" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_9'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_8" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_8'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_7" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_7'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_6" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_6'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_5" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_5'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_4'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_3'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_12" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_12'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_11" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_11'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_10" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_10'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_1'"
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_0'"
+   End Object
+   Begin Object Name="SkeletalBodySetup_9" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_9'"
+      AggGeom=(SphylElems=((Center=(X=10.786093,Y=-0.587236,Z=0.011897),Rotation=(Pitch=0.000000,Yaw=95.634575,Roll=-85.665047),Radius=9.826456,Length=12.105468)))
+      BoneName="lowerarm_l"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_8" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_8'"
+      AggGeom=(SphylElems=((Center=(X=14.468155,Y=-0.368288,Z=4.363337),Rotation=(Pitch=1.528835,Yaw=-90.000000,Roll=-23.879278),Radius=16.970850,Length=23.290424)))
+      BoneName="ear_03_r"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_7" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_7'"
+      AggGeom=(SphylElems=((Center=(X=6.143884,Y=-0.325151,Z=6.533555),Rotation=(Pitch=11.478562,Yaw=-90.000008,Roll=-53.361080),Radius=16.181776,Length=19.342619)))
+      BoneName="ear_02_r"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_6" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_6'"
+      AggGeom=(SphylElems=((Center=(X=14.468266,Y=-0.368248,Z=-4.363443),Rotation=(Pitch=-1.528890,Yaw=-90.000000,Roll=23.880297),Radius=16.970831,Length=23.290424)))
+      BoneName="ear_03_l"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_5" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_5'"
+      AggGeom=(SphylElems=((Center=(X=6.144039,Y=-0.325136,Z=-6.533505),Rotation=(Pitch=-11.478856,Yaw=-90.000008,Roll=-126.638802),Radius=16.181778,Length=19.342619)))
+      BoneName="ear_02_l"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_4" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_4'"
+      AggGeom=(SphylElems=((Center=(X=4.935492,Y=-7.103661,Z=26.236206),Rotation=(Pitch=0.000000,Yaw=-87.249222,Roll=-80.078934),Radius=29.109501,Length=48.387447)))
+      BoneName="ear_root"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_3" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_3'"
+      AggGeom=(SphylElems=((Center=(X=42.041618,Y=-5.450943,Z=0.129932),Rotation=(Pitch=0.000000,Yaw=60.797523,Roll=-179.183456),Radius=56.459209,Length=59.207890)))
+      BoneName="head"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_2'"
+      AggGeom=(SphylElems=((Center=(X=1.597109,Y=-2.536254,Z=0.000015),Rotation=(Pitch=0.000034,Yaw=-89.999992,Roll=-0.000083),Radius=17.968939,Length=36.735207)))
+      BoneName="spine_02"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_13" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_13'"
+      AggGeom=(SphylElems=((Center=(X=7.520119,Y=-1.214994,Z=-0.003751),Rotation=(Pitch=89.855980,Yaw=-4.566092,Roll=85.432426),Radius=11.040990,Length=11.324720)))
+      BoneName="tail_root"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_12" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_12'"
+      AggGeom=(SphylElems=((Center=(X=14.130816,Y=-2.424383,Z=0.130266),Rotation=(Pitch=0.000007,Yaw=-99.850266,Roll=-84.465256),Radius=12.089358,Length=14.831692)))
+      BoneName="thigh_l"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_11" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_11'"
+      AggGeom=(SphylElems=((Center=(X=14.130854,Y=-2.424378,Z=-0.130272),Rotation=(Pitch=0.000000,Yaw=80.149742,Roll=-84.465347),Radius=12.089355,Length=14.831686)))
+      BoneName="thigh_r"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_10" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_10'"
+      AggGeom=(SphylElems=((Center=(X=10.786137,Y=-0.587238,Z=-0.011898),Rotation=(Pitch=0.000000,Yaw=-84.365440,Roll=-85.665146),Radius=9.826454,Length=12.105465)))
+      BoneName="lowerarm_r"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_1'"
+      AggGeom=(SphylElems=((Center=(X=-2.701485,Y=-3.498871,Z=0.000000),Rotation=(Pitch=0.000000,Yaw=-89.999992,Roll=-0.000000),Radius=19.987106,Length=25.130486)))
+      BoneName="spine_01"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath="/Script/Engine.SkeletalBodySetup'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SkeletalBodySetup_0'"
+      AggGeom=(SphylElems=((Center=(X=-1.049392,Y=-3.886627,Z=0.000000),Rotation=(Pitch=0.000007,Yaw=-89.999992,Roll=-0.000000),Radius=21.221054,Length=27.308720)))
+      BoneName="pelvis"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_9" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_9'"
+      DefaultInstance=(JointName="lowerarm_r",ConstraintBone1="lowerarm_r",ConstraintBone2="spine_02",Pos2=(X=2.168524,Y=0.149078,Z=36.457500),PriAxis2=(X=0.001383,Y=0.023582,Z=0.999721),SecAxis2=(X=0.058267,Y=0.998022,Z=-0.023622),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_8" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_8'"
+      DefaultInstance=(JointName="lowerarm_l",ConstraintBone1="lowerarm_l",ConstraintBone2="spine_02",Pos2=(X=2.168525,Y=0.149079,Z=-36.457542),PriAxis2=(X=0.001382,Y=0.023581,Z=-0.999721),SecAxis2=(X=0.058266,Y=0.998022,Z=0.023622),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_7" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_7'"
+      DefaultInstance=(JointName="ear_03_r",ConstraintBone1="ear_03_r",ConstraintBone2="ear_02_r",Pos2=(X=19.439699,Y=-0.000000,Z=0.000000),PriAxis2=(X=0.978894,Y=0.204354,Z=0.002447),SecAxis2=(X=-0.204354,Y=0.978897,Z=-0.000417),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_6" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_6'"
+      DefaultInstance=(JointName="ear_02_r",ConstraintBone1="ear_02_r",ConstraintBone2="ear_root",Pos2=(X=-31.506248,Y=-9.840980,Z=29.309923),PriAxis2=(X=-0.290207,Y=-0.050829,Z=0.955613),SecAxis2=(X=-0.058723,Y=0.997652,Z=0.035231),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_5" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_5'"
+      DefaultInstance=(JointName="ear_03_l",ConstraintBone1="ear_03_l",ConstraintBone2="ear_02_l",Pos2=(X=19.439499,Y=0.000000,Z=0.000000),PriAxis2=(X=0.978895,Y=0.204350,Z=-0.002423),SecAxis2=(X=-0.204349,Y=0.978898,Z=0.000413),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_4" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_4'"
+      DefaultInstance=(JointName="ear_02_l",ConstraintBone1="ear_02_l",ConstraintBone2="ear_root",Pos2=(X=40.347607,Y=-6.388635,Z=16.727697),PriAxis2=(X=0.600403,Y=-0.008038,Z=0.799657),SecAxis2=(X=-0.025888,Y=0.999230,Z=0.029482),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_3" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_3'"
+      DefaultInstance=(JointName="ear_root",ConstraintBone1="ear_root",ConstraintBone2="head",Pos2=(X=79.858879,Y=-2.727695,Z=0.000000),PriAxis2=(X=0.172092,Y=-0.047991,Z=-0.983911),SecAxis2=(X=0.008268,Y=0.998848,Z=-0.047274),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_2" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_2'"
+      DefaultInstance=(JointName="head",ConstraintBone1="head",ConstraintBone2="spine_02",Pos2=(X=12.009697,Y=0.207412,Z=0.000000),PriAxis2=(X=0.998300,Y=-0.058285,Z=0.000000),SecAxis2=(X=0.058285,Y=0.998300,Z=-0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_12" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_12'"
+      DefaultInstance=(JointName="tail_root",ConstraintBone1="tail_root",ConstraintBone2="pelvis",Pos2=(X=0.652115,Y=-22.863834,Z=-0.000000),PriAxis2=(X=-0.167651,Y=-0.985846,Z=0.000000),SecAxis2=(X=-0.985846,Y=0.167651,Z=-0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_11" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_11'"
+      DefaultInstance=(JointName="thigh_l",ConstraintBone1="thigh_l",ConstraintBone2="pelvis",Pos2=(X=-0.644590,Y=-0.065251,Z=-15.850888),PriAxis2=(X=-0.970944,Y=0.237261,Z=-0.031223),SecAxis2=(X=0.237290,Y=0.971435,Z=0.002819),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_10" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_10'"
+      DefaultInstance=(JointName="thigh_r",ConstraintBone1="thigh_r",ConstraintBone2="pelvis",Pos2=(X=-0.644553,Y=-0.065257,Z=15.850900),PriAxis2=(X=-0.970944,Y=0.237260,Z=0.031221),SecAxis2=(X=0.237290,Y=0.971435,Z=-0.002819),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_1'"
+      DefaultInstance=(JointName="spine_02",ConstraintBone1="spine_02",ConstraintBone2="spine_01",Pos2=(X=11.853028,Y=-0.000000,Z=0.000000),PriAxis2=(X=0.998494,Y=0.054864,Z=-0.000000),SecAxis2=(X=-0.054864,Y=0.998494,Z=-0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath="/Script/Engine.PhysicsConstraintTemplate'/Game/Yippy_Kawaii/Meshes/Characters_meshes/Bunny_PhysicsAsset.Bunny_PhysicsAsset:PhysicsConstraintTemplate_0'"
+      DefaultInstance=(JointName="spine_01",ConstraintBone1="spine_01",ConstraintBone2="pelvis",Pos2=(X=15.511372,Y=0.000000,Z=0.000000),PriAxis2=(X=0.989338,Y=-0.145635,Z=0.000000),SecAxis2=(X=0.145635,Y=0.989338,Z=-0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   PreviewSkeletalMesh="/Game/Yippy_Kawaii/Meshes/Characters_meshes/SM_Bunny.SM_Bunny"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   BoundsBodies(3)=3
+   BoundsBodies(4)=4
+   BoundsBodies(5)=5
+   BoundsBodies(6)=6
+   BoundsBodies(7)=7
+   BoundsBodies(8)=8
+   BoundsBodies(9)=9
+   BoundsBodies(10)=10
+   BoundsBodies(11)=11
+   BoundsBodies(12)=12
+   BoundsBodies(13)=13
+   SkeletalBodySetups(0)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_0'"
+   SkeletalBodySetups(1)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_1'"
+   SkeletalBodySetups(2)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_2'"
+   SkeletalBodySetups(3)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_3'"
+   SkeletalBodySetups(4)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_4'"
+   SkeletalBodySetups(5)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_5'"
+   SkeletalBodySetups(6)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_6'"
+   SkeletalBodySetups(7)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_7'"
+   SkeletalBodySetups(8)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_8'"
+   SkeletalBodySetups(9)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_9'"
+   SkeletalBodySetups(10)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_10'"
+   SkeletalBodySetups(11)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_11'"
+   SkeletalBodySetups(12)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_12'"
+   SkeletalBodySetups(13)="/Script/Engine.SkeletalBodySetup'SkeletalBodySetup_13'"
+   ConstraintSetup(0)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_0'"
+   ConstraintSetup(1)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_1'"
+   ConstraintSetup(2)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_2'"
+   ConstraintSetup(3)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_3'"
+   ConstraintSetup(4)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_4'"
+   ConstraintSetup(5)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_5'"
+   ConstraintSetup(6)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_6'"
+   ConstraintSetup(7)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_7'"
+   ConstraintSetup(8)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_8'"
+   ConstraintSetup(9)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_9'"
+   ConstraintSetup(10)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_10'"
+   ConstraintSetup(11)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_11'"
+   ConstraintSetup(12)="/Script/Engine.PhysicsConstraintTemplate'PhysicsConstraintTemplate_12'"
+   SolverSettings=(CullDistance=1.000000,bUseLinearJointSolver=False,bUseManifolds=False)
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+End Object

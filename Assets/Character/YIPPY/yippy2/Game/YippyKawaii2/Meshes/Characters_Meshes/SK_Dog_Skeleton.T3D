@@ -1,0 +1,9 @@
+Begin Object Class=/Script/Engine.Skeleton Name="SK_Dog_Skeleton" ExportPath="/Script/Engine.Skeleton'/Game/YippyKawaii2/Meshes/Characters_Meshes/SK_Dog_Skeleton.SK_Dog_Skeleton'"
+   Begin Object Class=/Script/Engine.AnimCurveMetaData Name="AnimCurveMetaData_0" ExportPath="/Script/Engine.AnimCurveMetaData'/Game/YippyKawaii2/Meshes/Characters_Meshes/SK_Dog_Skeleton.SK_Dog_Skeleton:AnimCurveMetaData_0'"
+   End Object
+   Begin Object Name="AnimCurveMetaData_0" ExportPath="/Script/Engine.AnimCurveMetaData'/Game/YippyKawaii2/Meshes/Characters_Meshes/SK_Dog_Skeleton.SK_Dog_Skeleton:AnimCurveMetaData_0'"
+   End Object
+   BoneTree(43)=()
+   PreviewSkeletalMesh="/Game/YippyKawaii2/Meshes/Characters_Meshes/SM_Monkey.SM_Monkey"
+   AssetUserData(0)="/Script/Engine.AnimCurveMetaData'AnimCurveMetaData_0'"
+End Object
